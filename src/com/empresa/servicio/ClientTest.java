@@ -7,14 +7,14 @@ import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 
-@ApplicationPath("/matrizDinamica")
-public class MatrizDinamica extends Application {
+@ApplicationPath("/clientTest")
+public class ClientTest extends Application {
 	
 	private Set<Object> singletons = new HashSet<Object>();
 	private Set<Class<?>> empty = new HashSet<Class<?>>();
 
-	public MatrizDinamica() {
-		singletons.add(new ClienteWebService());
+	public ClientTest() {
+		singletons.add(new TestWebService());
 	}
 
 	@Override
